@@ -1,0 +1,33 @@
+{
+  "name": "gatsby-starter-custom",
+  "description": "Gatsby custom starter",
+  "version": "0.1.0",
+  "dependencies": {
+    "gatsby": "~2.1.19",
+    "gatsby-image": "~2.0.30",
+    "gatsby-plugin-eslint": "~2.0.4",
+    "gatsby-plugin-manifest": "~2.0.20",
+    "gatsby-plugin-offline": "~2.0.24",
+    "gatsby-plugin-react-helmet": "~3.0.7",
+    "gatsby-plugin-sharp": "~2.0.23",
+    "gatsby-source-filesystem": "~2.0.23",
+    "gatsby-transformer-sharp": "~2.1.15",
+    "prop-types": "~15.7.2",
+    "react": "~16.8.3",
+    "react-dom": "~16.8.3",
+    "react-helmet": "^5.2.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint": "~5.14.1",
+    "eslint-config-makina": "~0.8.2"
+  }
+}
