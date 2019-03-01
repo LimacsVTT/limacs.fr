@@ -1,3 +1,5 @@
+const gatsbyConfigWordpress = require('./gatsby-config-wordpress.js');
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
@@ -12,6 +14,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    gatsbyConfigWordpress,
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
