@@ -2,10 +2,12 @@ const gatsbyConfigWordpress = require('./gatsby-config-wordpress.js');
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Limacs VTT - Lectoure',
   },
   plugins: [
-    'gatsby-plugin-eslint',
+    {
+      resolve: 'gatsby-plugin-eslint',
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
