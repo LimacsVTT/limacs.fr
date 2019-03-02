@@ -18,7 +18,7 @@ module.exports = {
     // If useACF is true, then the source plugin will try to import the Wordpress ACF Plugin contents.
     // This feature is untested for sites hosted on wordpress.com.
     // Defaults to true.
-    useACF: true,
+    useACF: false,
     // Include specific ACF Option Pages that have a set post ID
     // Regardless if an ID is set, the default options route will still be retrieved
     // Must be using V3 of ACF to REST to include these routes
@@ -27,7 +27,7 @@ module.exports = {
     // The IDs provided to this array should correspond to the `post_id` value when defining your
     // options page using the provided `acf_add_options_page` method, in your WordPress setup
     // Dashes in IDs will be converted to underscores for use in GraphQL
-    acfOptionPageIds: [],
+    // acfOptionPageIds: [],
     auth: {
       // If auth.user and auth.pass are filled, then the source plugin will be allowed
       // to access endpoints that are protected with .htaccess.
