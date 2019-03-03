@@ -14,11 +14,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Layout.css';
 
 
-const Layout = ({ data, children }) => {
+const Layout = ({ data, children, title = {} }) => {
   const { allWordpressSiteMetadata: { edges: [{ node: wpMeta }] } } = data;
+  let pageTitle = wpMeta.name;
+  if (typeof title === 'string') {
+    pageTitle = title;
+  }
+
+  const { prefix, suffix, separator = ' - ' } = title;
+  pageTitle = [prefix, pageTitle, suffix].filter(a => a).join(separator);
+
   return (
     <>
-      <Helmet title={wpMeta.name} meta={[{ name: 'description', content: wpMeta.description }]}>
+      <Helmet
+        title={pageTitle}
+        meta={[{ name: 'description', content: wpMeta.description }]}
+      >
         <html lang="fr" />
       </Helmet>
       <Container>

@@ -3,9 +3,9 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 
 const PageTemplate = ({ data }) => {
-  const { html } = data.markdownRemark;
+  const { html, frontmatter: { title: suffix } = {} } = data.markdownRemark;
   return (
-    <Layout>
+    <Layout title={{ suffix }}>
       {/* eslint-disable-next-line react/no-danger */}
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
