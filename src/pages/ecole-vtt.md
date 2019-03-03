@@ -1,5 +1,6 @@
 ---
 path: /ecole-vtt
+title: École VTT à partir de 8 ans
 ---
 
 # L’école VTT

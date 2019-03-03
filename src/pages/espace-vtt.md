@@ -1,5 +1,6 @@
 ---
 path: /espace-vtt
+title: Espace VTT/FFC - Vallons du Lectourois Coeur de Gascogne
 ---
 
 # Espace VTT/FFC

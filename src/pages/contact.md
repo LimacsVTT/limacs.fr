@@ -1,5 +1,6 @@
 ---
 path: /contact
+title: Nous contacter
 ---
 
 # Limacs VTT Club Lectourois
