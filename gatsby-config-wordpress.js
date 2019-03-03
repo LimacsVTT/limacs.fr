@@ -55,14 +55,14 @@ module.exports = {
     },
     // Set verboseOutput to true to display a verbose output on `npm run develop` or `npm run build`
     // It can help you debug specific API Endpoints problems.
-    verboseOutput: false,
+    verboseOutput: true,
     // Set how many pages are retrieved per API request.
     perPage: 100,
     // Search and Replace Urls across WordPress content.
-    searchAndReplaceContentUrls: {
-      sourceUrl: 'https://source-url.com',
-      replacementUrl: 'https://replacement-url.com',
-    },
+    // searchAndReplaceContentUrls: {
+    //   sourceUrl: 'https://source-url.com',
+    //   replacementUrl: 'https://replacement-url.com',
+    // },
     // Set how many simultaneous requests are sent at once.
     concurrentRequests: 10,
     // Set WP REST API routes whitelists
@@ -75,13 +75,13 @@ module.exports = {
     // all routes that begin with `yoast` from fetch.
     // Whitelisted routes using glob patterns
     includedRoutes: [
-      '**/categories',
-      '**/posts',
+      // '**/categories',
+      // '**/posts',
       '**/pages',
-      '**/media',
-      '**/tags',
-      '**/taxonomies',
-      '**/users',
+      // '**/media',
+      // '**/tags',
+      // '**/taxonomies',
+      // '**/users',
     ],
     // Blacklisted routes using glob patterns
     // excludedRoutes: ['**/posts/1456'],
